@@ -6,3 +6,6 @@ wait(5)
 
 main1("Default", true, "Veng | v", "13579", "1.1")
 -- Main1(Color", keyOn, title, key, version)
+    loadingBY = "by bysuskhmer"
+    HowGetKey = "Join The Group For Get Key https://discord.gg/MJBhS8X5ub"
+    AutoSaveKey = false
