@@ -4,8 +4,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Bysuskhmerops62/VENG-
 
 wait(5)
 
-main1("Default", true, "Veng | v", "13579", "1.1")
--- Main1(Color", keyOn, title, key, version)
+colorTheme = "Default"
+    KeyShow = true
+    Title = "Veng | v1.1"
+    key = "13579"
     loadingBY = "by bysuskhmer"
     HowGetKey = "Join The Group For Get Key https://discord.gg/MJBhS8X5ub"
     AutoSaveKey = false
+    VengShow()
