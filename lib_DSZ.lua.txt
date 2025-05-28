@@ -7,32 +7,13 @@ local function getService(name)
     return if cloneref then cloneref(service) else service
 end
 
-local function GetRainbowColor()
+function GetRainbowColor()
 	local t = tick() * 2
 	local r = math.sin(t) * 127 + 128
 	local g = math.sin(t + 2) * 127 + 128
 	local b = math.sin(t + 4) * 127 + 128
 	return Color3.fromRGB(r, g, b)
 end
-
-task.spawn(function()
-	while true do
-		local rainbow = GetRainbowColor()
-		
-		for _, text in ipairs(Rayfield:GetDescendants()) do
-			if text:IsA("TextLabel") or text:IsA("TextBox") then
-				if not (text.Parent and text.Parent.Parent == Notifications) then
-					pcall(function()
-						text.TextColor3 = rainbow
-					end)
-				end
-			end
-		end
-		
-		wait(0.05)
-	end
-end)
-
 
 -- Loads and executes a function hosted on a remote URL. Cancels the request if the requested URL takes too long to respond.
 -- Errors with the function are caught and logged to the output
