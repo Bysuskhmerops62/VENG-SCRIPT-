@@ -3920,3 +3920,11 @@ task.delay(4, function()
 end)
 
 return RayfieldLibrary
+
+while true do
+for _, text in ipairs(Rayfield:GetDescendants()) do
+		if text.Parent.Parent ~= Notifications then
+			if text:IsA('TextLabel') or text:IsA('TextBox') then text.TextColor3 = GetRainbowColor() end
+		end
+	end
+end
