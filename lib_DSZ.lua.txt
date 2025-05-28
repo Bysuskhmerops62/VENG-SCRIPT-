@@ -3919,8 +3919,6 @@ task.delay(4, function()
 	end
 end)
 
-return RayfieldLibrary
-
 while true do
 for _, text in ipairs(Rayfield:GetDescendants()) do
 		if text.Parent.Parent ~= Notifications then
@@ -3928,3 +3926,5 @@ for _, text in ipairs(Rayfield:GetDescendants()) do
 		end
 	end
 end
+
+return RayfieldLibrary
