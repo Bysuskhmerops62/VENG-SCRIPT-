@@ -3678,6 +3678,26 @@ function RayfieldLibrary:LoadConfiguration()
 	end
 
 	globalLoaded = true
+	
+	task.spawn(function()
+	while true do
+		local rainbow = GetRainbowColor()
+		
+		for _, text in ipairs(Rayfield:GetDescendants()) do
+			if text:IsA("TextLabel") or text:IsA("TextBox") then
+				if not (text.Parent and text.Parent.Parent == Notifications) then
+					pcall(function()
+						text.TextColor3 = rainbow
+					end)
+				end
+			end
+		end
+		
+		wait(0.05)
+	end
+end)
+
+
 end
 
 
@@ -3918,13 +3938,5 @@ task.delay(4, function()
 		Main.Notice.Visible = false
 	end
 end)
-
-while true do
-for _, text in ipairs(Rayfield:GetDescendants()) do
-		if text.Parent.Parent ~= Notifications then
-			if text:IsA('TextLabel') or text:IsA('TextBox') then text.TextColor3 = GetRainbowColor() end
-		end
-	end
-end
 
 return RayfieldLibrary
