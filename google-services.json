@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "264388750716",
+    "firebase_url": "https://ta-bin-2-default-rtdb.firebaseio.com",
+    "project_id": "ta-bin-2",
+    "storage_bucket": "ta-bin-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264388750716:android:2b04f9c5626919c0e808f9",
+        "android_client_info": {
+          "package_name": "com.LuaObfuacation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264388750716-mhk1i6ds943g5j77o9afl1d3bmcj03qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjceTsyVWUVc3_zkHgKJTS0eQVU4Y0-H4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264388750716-mhk1i6ds943g5j77o9afl1d3bmcj03qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264388750716:android:8a8736837a7921e3e808f9",
+        "android_client_info": {
+          "package_name": "com.gg.webview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264388750716-mhk1i6ds943g5j77o9afl1d3bmcj03qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjceTsyVWUVc3_zkHgKJTS0eQVU4Y0-H4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264388750716-mhk1i6ds943g5j77o9afl1d3bmcj03qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264388750716:android:230eca43a6d7471ee808f9",
+        "android_client_info": {
+          "package_name": "com.tiktokdataX"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264388750716-mhk1i6ds943g5j77o9afl1d3bmcj03qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjceTsyVWUVc3_zkHgKJTS0eQVU4Y0-H4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264388750716-mhk1i6ds943g5j77o9afl1d3bmcj03qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
