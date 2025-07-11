@@ -1,16 +1,14 @@
-
-
 local Libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 workspace.FallenPartsDestroyHeight = -math.huge
 
 local Window = Libary:MakeWindow({
-    Title = "Chaos Hub | Brookhaven RP ",
-    SubTitle = "by: Luscaa and venom",
-    LoadText = "Carregando Chaos Hub",
-    Flags = "ChaosHub_Broookhaven"
+    Title = "MokurenX | Brookhaven RP ",
+    SubTitle = "by: Bysuskhmer",
+    LoadText = "Loading MokurenX",
+    Flags = "MokurenX_Broookhaven"
 })
 Window:AddMinimizeButton({
-    Button = { Image = "rbxassetid://131669852271916", BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://17813607147", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(35, 1) },
 })
 
@@ -18,10 +16,10 @@ local InfoTab = Window:MakeTab({ Title = "Info", Icon = "rbxassetid://1530913847
 
 
 
-InfoTab:AddSection({ "Informações do Script" })
-InfoTab:AddParagraph({ "Owner / Developer:", "Luscaa and veno." })
-InfoTab:AddParagraph({ "Colaborações:", "Blue, sukuna, Magekko, Darkness, Star, Toddy" })
-InfoTab:AddParagraph({ "Você está usando:", "Chaos Hub Brookhaven " })
+InfoTab:AddSection({ "Script Information" })
+InfoTab:AddParagraph({ "Owner / Developer:", "Lusca and vein." })
+InfoTab:AddParagraph({ "Collaborations:", "Blue, sukuna, Magekko, Darkness, Star, Toddy" })
+InfoTab:AddParagraph({ "You are using:", "MokurenX Brookhaven " })
 InfoTab:AddParagraph({"Your executor:", executor})
 
 InfoTab:AddSection({ "Rejoin" })
@@ -41,7 +39,7 @@ local TrollTab = Window:MakeTab({ Title = "Scripts Trolls", Icon = "rbxassetid:/
 TrollTab:AddSection({ "Black Hole" })
 TrollTab:AddButton({
     Name = "Black Hole",
-    Description = " Ativando isso você puxa Parts até o seu personagem",
+    Description = " Activating this pulls Parts to your character",
     Callback = function()
         local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -192,10 +190,10 @@ toggleBlackHole()
 })
 
 
-TrollTab:AddSection({ "Puxar Parts" })
+TrollTab:AddSection({ "Pull Parts" })
 TrollTab:AddButton({
-    Name = "Puxar Parts",
-    Description = "Para usar, chegue perto do Player Selecionado",
+    Name = "Pull Parts",
+    Description = "To use, approach the Selected Player",
     Callback = function()
         -- Gui to Lua
 -- Version: 3.2
@@ -440,11 +438,11 @@ coroutine.wrap(JUBNQKI_fake_script)()
     end
 })
 
-TrollTab:AddSection({ "Invisível" })
+TrollTab:AddSection({ "Invisible" })
 
 TrollTab:AddButton({
-    Name = "Ficar Invisível",
-    Description = "Ficar invisível FE",
+    Name = "Become Invisible",
+    Description = "Become invisible FE",
 Callback = function()
         
         local args = {
@@ -515,7 +513,7 @@ end
 
 TrollTab:AddToggle({
     Name = "RGB Character",
-    Description = "Deixa seu personagem RGB",
+    Description = "Make your character RGB",
     Default = false,
     Callback = function(value)
         toggleRGBCharacter(value)
@@ -523,7 +521,7 @@ TrollTab:AddToggle({
 })
 
 
-TrollTab:AddSection({ "Cabelo RGB" })
+TrollTab:AddSection({ "Hair RGB" })
 local hairColors = {
     Color3.new(1, 1, 0), Color3.new(0, 0, 1), Color3.new(1, 0, 1), Color3.new(1, 1, 1),
     Color3.new(0, 1, 0), Color3.new(0.5, 0, 1), Color3.new(1, 0.647, 0), Color3.new(0, 1, 1)
@@ -544,8 +542,8 @@ end
 
 
 TrollTab:AddToggle({
-    Name = "Cabelo RGB",
-    Description = "Deixa Seu Cabelo RGB",
+    Name = "Hair RGB",
+    Description = "Make Your Hair RGB",
     Default = false,
     Callback = function(value)
         isActive = value
@@ -560,7 +558,7 @@ TrollTab:AddToggle({
 TrollTab:AddSection({ "Anti Sit" })
 TrollTab:AddToggle({
     Name = "Anti Sit",
-    Description = "Não Deixa seu personagem Sentar",
+    Description = "Don't Let Your Character Sit",
     Default = false,
     Callback = function(Value)
         local player = game.Players.LocalPlayer
@@ -679,25 +677,25 @@ end
 -- Função KillPlayerCouch
 local function KillPlayerCouch()
     if not selectedPlayerName then
-        warn("Erro: Nenhum jogador selecionado")
+        warn("Erro: No player selected")
         return
     end
     local target = Players:FindFirstChild(selectedPlayerName)
     if not target or not target.Character then
-        warn("Erro: Jogador alvo não encontrado ou sem personagem")
+        warn("Erro: Target player not found or missing character")
         return
     end
 
     local char = LocalPlayer.Character
     if not char then
-        warn("Erro: Personagem do jogador local não encontrado")
+        warn("Erro: Local player character not found")
         return
     end
     local hum = char:FindFirstChildOfClass("Humanoid")
     local root = char:FindFirstChild("HumanoidRootPart")
     local tRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
     if not hum or not root or not tRoot then
-        warn("Erro: Componentes necessários não encontrados")
+        warn("Erro: Required components not found")
         return
     end
 
@@ -775,25 +773,25 @@ end
 -- Função BringPlayerLLL
 local function BringPlayerLLL()
     if not selectedPlayerName then
-        warn("Erro: Nenhum jogador selecionado")
+        warn("Erro: No player selected")
         return
     end
     local target = Players:FindFirstChild(selectedPlayerName)
     if not target or not target.Character then
-        warn("Erro: Jogador alvo não encontrado ou sem personagem")
+        warn("Erro: Target player not found or without characterm")
         return
     end
 
     local char = LocalPlayer.Character
     if not char then
-        warn("Erro: Personagem do jogador local não encontrado")
+        warn("Erro: Local player character not found")
         return
     end
     local hum = char:FindFirstChildOfClass("Humanoid")
     local root = char:FindFirstChild("HumanoidRootPart")
     local tRoot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
     if not hum or not root or not tRoot then
-        warn("Erro: Componentes necessários não encontrados")
+        warn("Erro: Required components not found")
         return
     end
 
@@ -875,11 +873,11 @@ end
 local function BringWithCouch()
     local targetPlayer = Players:FindFirstChild(getgenv().Target)
     if not targetPlayer then
-        warn("Erro: Nenhum jogador alvo selecionado")
+        warn("Erro: No target player selected")
         return
     end
     if not targetPlayer.Character or not targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
-        warn("Erro: Jogador alvo sem personagem ou HumanoidRootPart")
+        warn("Erro: Target player without character or HumanoidRootPart")
         return
     end
 
@@ -890,7 +888,7 @@ local function BringWithCouch()
 
     local couch = LocalPlayer.Backpack:WaitForChild("Couch", 2)
     if not couch then
-        warn("Erro: Sofá não encontrado no Backpack")
+        warn("Erro: Sofa not found in Backpack")
         return
     end
 
@@ -903,7 +901,7 @@ local function BringWithCouch()
         seat2.Disabled = true
         handle.Name = "Handle "
     else
-        warn("Erro: Componentes do sofá não encontrados")
+        warn("Erro: Sofa components not found")
         return
     end
     couch.Parent = LocalPlayer.Character
@@ -959,11 +957,11 @@ end
 local function KillWithCouch()
     local targetPlayer = Players:FindFirstChild(getgenv().Target)
     if not targetPlayer then
-        warn("Erro: Nenhum jogador alvo selecionado")
+        warn("Erro: No target player selected")
         return
     end
     if not targetPlayer.Character or not targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
-        warn("Erro: Jogador alvo sem personagem ou HumanoidRootPart")
+        warn("Erro: Target player without character or HumanoidRootPart")
         return
     end
 
@@ -974,7 +972,7 @@ local function KillWithCouch()
 
     local couch = LocalPlayer.Backpack:WaitForChild("Couch", 2)
     if not couch then
-        warn("Erro: Sofá não encontrado no Backpack")
+        warn("Erro: Sofa not found in Backpack")
         return
     end
 
@@ -987,7 +985,7 @@ local function KillWithCouch()
         seat2.Disabled = true
         handle.Name = "Handle "
     else
-        warn("Erro: Componentes do sofá não encontrados")
+        warn("Erro: Sofa components not found")
         return
     end
     couch.Parent = LocalPlayer.Character
